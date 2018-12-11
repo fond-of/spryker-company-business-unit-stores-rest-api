@@ -12,5 +12,5 @@ interface CompanyBusinessUnitStoresReaderInterface
      *
      * @return \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResponseInterface
      */
-    public function findCompanyBusinessUnitStoreByExternalReference(RestRequestInterface $restRequest): RestResponseInterface;
+    public function findCompanyBusinessUnitStoreById(RestRequestInterface $restRequest): RestResponseInterface;
 }
