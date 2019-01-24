@@ -8,4 +8,17 @@
         <property name="name" type="string" />
     </transfer>
 
+    <transfer name="RestCompanyBusinessUnitStoresResponse">
+        <property name="isSuccess" type="bool" />
+        <property name="errors" type="RestCompanyBusinessUnitStoresError[]" singular="error" />
+        <property name="restCompanyBusinessUnitStoresAttributes" type="RestCompanyBusinessUnitStoresAttributes" />
+    </transfer>
+
+    <transfer name="RestCompanyBusinessUnitStoresError">
+        <property name="status" type="int"/>
+        <property name="code" type="string"/>
+        <property name="detail" type="string"/>
+        <property name="parameters" type="array"/>
+    </transfer>
+
 </transfers>

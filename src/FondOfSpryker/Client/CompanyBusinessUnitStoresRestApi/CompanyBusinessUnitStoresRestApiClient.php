@@ -3,6 +3,7 @@
 namespace FondOfSpryker\Client\CompanyBusinessUnitStoresRestApi;
 
 use Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer;
+use Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer;
 use Spryker\Client\Kernel\AbstractClient;
 
 /**
@@ -27,11 +28,11 @@ class CompanyBusinessUnitStoresRestApiClient extends AbstractClient implements C
     /**
      * @param \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
      *
-     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer
+     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer
      */
     public function create(
         RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
-    ): RestCompanyBusinessUnitStoresAttributesTransfer {
+    ): RestCompanyBusinessUnitStoresResponseTransfer {
 
         return $this->getFactory()
             ->createZedCompanyBusinessUnitStoresRestApiStub()
@@ -41,11 +42,11 @@ class CompanyBusinessUnitStoresRestApiClient extends AbstractClient implements C
     /**
      * @param \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
      *
-     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer
+     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer
      */
     public function update(
         RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
-    ): RestCompanyBusinessUnitStoresAttributesTransfer {
+    ): RestCompanyBusinessUnitStoresResponseTransfer {
 
         return $this->getFactory()
             ->createZedCompanyBusinessUnitStoresRestApiStub()

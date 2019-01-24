@@ -29,6 +29,10 @@ class CompanyBusinessUnitStoreWriter implements CompanyBusinessUnitStoreWriterIn
         RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
     ): RestCompanyBusinessUnitStoresAttributesTransfer {
 
+
+
+
+
         // TODO call facade // mapping // validation // error
         return $restCompanyBusinessUnitStoresAttributesTransfer;
     }
@@ -45,5 +49,24 @@ class CompanyBusinessUnitStoreWriter implements CompanyBusinessUnitStoreWriterIn
 
         // TODO call facade // mapping // validation // error
         return $restCompanyBusinessUnitStoresAttributesTransfer;
+    }
+
+    /**
+     * @return \Generated\Shared\Transfer\RestCompanyUsersResponseTransfer
+     */
+    protected function createCompanyBusinessUnitStoreDataInvalidErrorResponse(): RestCompanyBusinessUnitStoreResponseTransfer
+    {
+        $restCompanyBusinessUnitStoreErrorTransfer = new RestCompanyBusinessUnitStoreErrorTransfer();
+
+        $restCompanyBusinessUnitStoreErrorTransfer->setStatus(Response::HTTP_UNPROCESSABLE_ENTITY)
+            ->setCode(CompanyUsersRestApiConfig::RESPONSE_CODE_COMPANY_USER_DATA_INVALID)
+            ->setDetail(CompanyUsersRestApiConfig::RESPONSE_DETAILS_COMPANY_USER_DATA_INVALID);
+
+        $restCompanyUsersResponseTransfer = new RestCompanyUsersResponseTransfer();
+
+        $restCompanyUsersResponseTransfer->setIsSuccess(false)
+            ->addError($restCompanyUsersErrorTransfer);
+
+        return $restCompanyUsersResponseTransfer;
     }
 }

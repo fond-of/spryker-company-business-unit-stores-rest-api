@@ -3,6 +3,7 @@
 namespace FondOfSpryker\Client\CompanyBusinessUnitStoresRestApi\Zed;
 
 use Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer;
+use Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer;
 
 interface CompanyBusinessUnitStoresRestApiStubInterface
 {
@@ -18,18 +19,18 @@ interface CompanyBusinessUnitStoresRestApiStubInterface
     /**
      * @param \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
      *
-     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer
+     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer
      */
     public function create(
         RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
-    ): RestCompanyBusinessUnitStoresAttributesTransfer;
+    ): RestCompanyBusinessUnitStoresResponseTransfer;
 
     /**
      * @param \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
      *
-     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresAttributesTransfer
+     * @return \Generated\Shared\Transfer\RestCompanyBusinessUnitStoresResponseTransfer
      */
     public function update(
         RestCompanyBusinessUnitStoresAttributesTransfer $restCompanyBusinessUnitStoresAttributesTransfer
-    ): RestCompanyBusinessUnitStoresAttributesTransfer;
+    ): RestCompanyBusinessUnitStoresResponseTransfer;
 }
